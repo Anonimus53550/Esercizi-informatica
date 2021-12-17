@@ -1,0 +1,49 @@
+#include<iosteram>
+
+using namespace std;
+
+int main(){
+	
+	
+	//Traccia
+cout<<" Scrivere un programma che inserendo i numeri dei giorni della settimana visuallizza il nome attribuendo il numero1 alla domenica"<<endl;
+	
+	
+	
+	//Variabili
+int nani;
+	
+	
+	//Input Dati
+cout<<" Numero di nani (1-7) : ";
+cin>>nani;
+switch (nani)
+{
+	case 1:
+		cout<<" e Dotto "<<endl;
+		break;
+	case 2:
+		cout<<" e' Brontolo "<<endl;
+		break;
+	case 3:
+		cout<<" e' Pisolo "<<endl;
+		break;
+	case 4:
+		cout<<" e Mammolo "<<endl;
+		break;
+	case 5:
+		cout<<" e Gongolo "<<endl;
+		break;
+	case 6:
+		cout<<" e' Eolo "<<endl;
+		break;
+	case 7:
+		cout<<" e' Cucciolo "<<endl;
+		break;
+	default:
+		cout<<" Nessun dei sette nani di Biancaneve "<<endl;
+	
+}
+
+return 0;	
+}

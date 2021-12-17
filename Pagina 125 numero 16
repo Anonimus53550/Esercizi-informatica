@@ -1,0 +1,34 @@
+//Traccia
+cout<<" Leggere in input tre lati di un triangolo e individua se il triangolo e' equilatero e ne calcola il perimetro e l'area "<<endl;
+
+//Variabili
+float lato1, lato2, lato3, perimetro, area;
+
+//Input Dati
+cout<<" Inserire il primo lato \t: ";
+	cin>>lato1;
+cout<<" Inserire il secondo lato \t: ";	
+	cin>>lato2;
+cout<<" Inserire il terzo lato \t: ";
+	cin>>lato3;	
+		
+//Verificare se e' un triangolo equilatero
+		if 	(lato1=lato2==lato3) {
+		cout<<" Il triangolo e' equilatero";
+	}else{cout<<" Il triangolo non e' equilatero";
+	}
+
+//Calcoli
+perimetro=(lato1+lato2+lato3);
+area=(lato1+lato2*sqrt(3))/4;
+
+
+//Risposta
+	cout<< " Questo e'il perimetro "<<perimetro<<endl;
+	cout<< " Questo e' l'area "<<area<<endl;
+	
+
+
+
+return 0;
+}

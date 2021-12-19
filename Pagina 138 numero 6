@@ -1,0 +1,64 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	
+	
+	//Traccia
+	cout<<" Scrivi un programma che iserendo l'importo totale degli acquisti visuallizzi lo sconto e l'importo netto da pagare "<<endl;
+	
+	
+	
+	//Variabili
+	float sconto, importonetto, importototale;
+	
+	
+	//Input Dati
+	cout<<" Inserire L'importo totale'\t:";
+		cin>>importototale;
+	
+	//Calcoli
+if(importototale<50)
+{
+	sconto=(importototale*5)/100;
+	importonetto= importototale-sconto;
+	 //Risposta
+	 cout<<" L'importo da pagare e' : "<<importonetto<<endl;
+	 cout<<" Lo sconto e' :" <<sconto<<endl;
+}
+	else
+	
+	if(importototale<65)
+	{ sconto=(importototale*6)/100;
+	importonetto=importototale-sconto;
+	//Risposta
+	 cout<<" L'importo da pagare e' : "<<importonetto<<endl;
+	 cout<<" Lo sconto e' :" <<sconto<<endl;
+	}
+	else
+	
+	if(importototale<80)
+	{sconto=(importototale*7)/100;
+	importonetto=importototale-sconto;
+		//Risposta
+	 cout<<" L'importo da pagare e' : "<<importonetto<<endl;
+	 cout<<" Lo sconto e' :" <<sconto<<endl;
+	}
+	else
+	
+	if(importototale>=80)
+	{sconto=(importototale*10)/100;
+	importonetto=importototale-sconto;
+			//Risposta
+	 cout<<" L'importo da pagare e' : "<<importonetto<<endl;
+	 cout<<" Lo sconto e' :" <<sconto<<endl;
+	}
+	
+
+	
+	
+	
+	
+return 0;	
+}

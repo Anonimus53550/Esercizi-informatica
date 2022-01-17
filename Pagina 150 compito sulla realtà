@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+
+//Traccia
+cout<<" Calcola la % delle tassazioni in base al reddito  "<<endl;
+
+
+//Variabili 
+int t, r, rs;
+
+
+//Input Dati
+cout<<" Iserire il reddito: \t";
+cin>>r;
+cout<<" Inserire la tassazione: \t ";
+cin>>t;
+
+
+//Calcoli
+		if ((r>=0)&&(r<=10)){
+		cout<<" esenti dal reddito "<<endl;	}
+		else
+	if ((r>=10)&&(r<=20)){
+	rs=(r*t)*100/12;
+	}
+	if ((r>=20)&&(r<=35)){
+	rs=(r*t)*100/18;
+	}
+	if ((r>=35)&&(r<=60)){
+	rs=(r*t)*100/27;
+	}
+	if ((r>=60)&&(r<=100)){
+	rs=(r*t)*100/48;
+	}
+	if (r>=100){
+	rs=(r*t)*100/60;
+	}
+
+//Risposta
+cout<<" L'aumento del reddito e' di:"<<rs<<endl;
+
+
+return 0;
+
+}

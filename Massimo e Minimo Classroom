@@ -1,0 +1,54 @@
+#include<iostream>
+
+using namespace std;
+
+int main(){
+	
+	//Traccia
+	cout<<" Creare un programma che riceve tre numeri interi e restituisce la differenza tra il numero piu grande ed il numero piu piccolo. "<<endl;
+	
+	//Variabili	
+	int d, num1, num2, num3, massimo, minimo; 
+	
+	//Input Dati
+	cout<<" Inserisci il primo numero: \t ";
+	cin>>num1;
+	cout<<" Inserisci il secondo numero: \t ";
+	cin>>num2;
+	cout<<" Inserisci il terzo numero: \t ";
+	cin>>num3;
+	
+	
+	//Calcoli
+	if (num1 < num2)
+{
+if (num1 < num3)
+minimo=num1;
+else
+minimo=num3;
+
+if(num2>num3)
+massimo=num2;
+else
+massimo=num3;
+}
+else
+{
+if(num2<num3)
+minimo=num2;
+else
+minimo=num3;
+
+if(num1>num3)
+massimo=num1;
+else
+massimo=num3;
+}
+	//Risposte	
+	cout<<"Questo e' il numero massimo "<<massimo<<endl;
+	cout<<" Questo e' il numero minimo  "<<minimo<<endl;
+
+	//Calcolo Differenza
+	d=massimo-minimo;
+	cout<<" Questa e' la differenza "<<d<<endl;
+}

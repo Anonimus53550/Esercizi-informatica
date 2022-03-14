@@ -1,0 +1,37 @@
+#include<iostream>
+int letteraMaiuscola(char lettera);
+using namespace std;
+
+
+int main(){
+	
+	//Traccia
+	cout<<" Creare un programma che consente di inserire all'utente tre caratteri e consente di stampare quanti di questi sono lettere maiuscole "<<endl;
+	
+	
+	//Variabili
+	char lettera1;
+	char lettera2;
+	char lettera3;
+	
+	
+	//Input Dati
+	cout<<" Inserisci la prima lettera: \t ";
+	cin>>lettera1;
+	cout<<" Inserisci la seconda lettera: \t ";
+	cin>>lettera2;
+	cout<<" Inserisci la terza lettera: \t ";
+	cin>>lettera3;
+	 cout<<"tra i tre caratteri ci sono "<<letteraMaiuscola(lettera1)+letteraMaiuscola(lettera2)+letteraMaiuscola(lettera3)<<" lettere maiuscole";
+ 
+
+}
+int letteraMaiuscola(char lettera)
+{
+    int ritorno=0;
+    if(lettera>='A'&&lettera<='Z')
+    {
+        ritorno=1;
+    }
+    return ritorno;
+}
